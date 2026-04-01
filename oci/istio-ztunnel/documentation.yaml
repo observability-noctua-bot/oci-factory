@@ -2,8 +2,8 @@ version: 1
 # --- OVERVIEW INFORMATION ---
 application: ztunnel
 description: >
-  Ztunnel is a purpose built implementation of the node proxy 
-  to be used as the ztunnel component of Istio's ambient mesh.
+  Ztunnel is a purpose built implementation of the node proxy
+  to be used as the ztunnel component in Istio's ambient mesh.
   Read more on the [project repo](https://github.com/istio/ztunnel).
 
 # --- USAGE INFORMATION ---
@@ -27,7 +27,7 @@ parameters:
 debug:
   text: |
     ### Debugging
-    
+
     To debug the container:
     ```bash
     docker exec -it ztunnel-container pebble logs -f ztunnel
