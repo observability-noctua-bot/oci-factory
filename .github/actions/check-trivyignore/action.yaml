@@ -32,14 +32,14 @@ runs:
 
     - name: "Install trivy if not present"
       if: ${{ steps.detect-trivy.outputs.trivy-installed == 'false' }}
-      uses: aquasecurity/setup-trivy@v0.2.5
+      uses: aquasecurity/setup-trivy@3fb12ec12f41e471780db15c232d5dd185dcb514
 
     - name: "Check unnecessary trivyignore entries"
       shell: bash
       run: |
         if [ -f "${{ inputs.trivyignores }}" ]; then
             trivy image ${{ inputs.image-ref }} --severity ${{ inputs.severity }} -q \
-              -f json --ignorefile "" --skip-files ${{ inputs.skip-files }} --exit-code 0 \
+              -f json --ignorefile "/dev/null" --skip-files ${{ inputs.skip-files }} --exit-code 0 \
               > trivy-scan-raw.json 2>/dev/null
               bash ./.github/actions/check-trivyignore/check-trivyignore-entries.sh trivy-scan-raw.json "${{ inputs.trivyignores }}"
           else
