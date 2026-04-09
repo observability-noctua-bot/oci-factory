@@ -1,5 +1,6 @@
-# Upstream GitHub-related
+# Upstream GitHub/GitLab-related
 github-pat
+gitlab-pat
 
 # Upstream CVEs
 
@@ -43,22 +44,6 @@ CVE-2025-3260
 CVE-2025-4123
 # github.com/grafana/grafana - grafana: Cross Site Scripting in Grafana
 CVE-2025-6023
-# github.com/grafana/grafana - grafana: authentication bypass  knowing only a username of an LDAP or OAuth user
-CVE-2018-15727
-# github.com/grafana/grafana - grafana: information disclosure through world-readable /var/lib/grafana/grafana.db
-CVE-2020-12458
-# github.com/grafana/grafana - grafana: Snapshot authentication bypass
-CVE-2021-39226
-# github.com/grafana/grafana - grafana: Escalation from admin to server admin when auth proxy is used
-CVE-2022-35957
-# github.com/grafana/grafana - grafana: User enumeration via forget password
-CVE-2022-39307
-# github.com/grafana/grafana - grafana: data source proxy race condition
-CVE-2023-2801
-# github.com/grafana/grafana - grafana: account takeover possible when using Azure AD OAuth
-CVE-2023-3128
-# github.com/grafana/grafana - grafana: Cross Site Scripting in Grafana
-CVE-2025-6023
 # github.com/grafana/grafana-plugin-sdk-go - grafana-plugin-sdk-go: Information Leakage in grafana-plugin-sdk-go
 CVE-2024-8986
 # github.com/go-git/go-git/v5 - go-git: argument injection via the URL field
@@ -71,3 +56,9 @@ CVE-2025-22868
 CVE-2025-22869
 # github.com/golang-jwt/jwt/v4 - golang-jwt/jwt: jwt-go allows excessive memory allocation during header parsing
 CVE-2025-30204
+# github.com/go-jose/go-jose/v4 - go-jose: DoS via panic when decrypting JWE with key wrapping algorithm and empty encrypted_key
+CVE-2026-34986
+# github.com/moby/moby - moby: authorization plugin bypass vulnerability
+CVE-2026-34040
+# go.opentelemetry.io/otel/sdk - opentelemetry-go: Path Hijacking via untrusted search path on macOS/Darwin
+CVE-2026-24051
