@@ -1,17 +1,14 @@
 version: 2
 upload:
   - source: canonical/mimir-rock
-    commit: 1643c88de202944c99a5034880ad1cda5526e35a
-    directory: 3.0.5
+    commit: 80fd8a1ece24c6a5ee3d1892d66b19e11cc69f77
+    directory: 2.17.10
     release:
-      3-24.04:
-        end-of-life: '2026-07-17T00:00:00Z'
+      2-24.04:
+        end-of-life: '2026-07-23T00:00:00Z'
         risks:
           - stable
-      3.0-24.04:
-        end-of-life: '2026-07-17T00:00:00Z'
+      2.17-24.04:
+        end-of-life: '2026-07-23T00:00:00Z'
         risks:
           - stable
-    ignored-vulnerabilities:
-      - CVE-2026-34986  # Needs evaluation. https://ubuntu.com/security/CVE-2026-34986
-      - CVE-2026-39883  # Needs evaluation. https://ubuntu.com/security/CVE-2026-39883
